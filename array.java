@@ -26,7 +26,7 @@ public class Array {
 				+ "enter 'week' to display all temperatures and the weekly average.");
 		//Converting user input into Upper case format
 		String weekDay = scanner.next().toUpperCase();
-		
+		scanner.close();
 		int indexOfWeekDay = days.indexOf(weekDay);
 		if(indexOfWeekDay != -1) {
 			System.out.println("The temperature for " + days.get(indexOfWeekDay) + " is " + temp.get(indexOfWeekDay) + " degrees.");
